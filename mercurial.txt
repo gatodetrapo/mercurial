@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+<html><head> 
+
+<link rel="alternate" type="application/rss+xml" href="{RSS}" /> 
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+
+<!--
+
+                    MERCURIAL page theme by @gatoscodes
+                    
+                    ✘  don’t steal or claim as your own. 
+                    ✘  do NOT move or remove credit :)
+                
+              ✔  editing/customizing for personal use is fine
+                    ↳ view page guide for customization:
+                    
+               https://gato-previews.tumblr.com/mercurial-guide
+                     
+-->
+
+  <title>fic recs</title> <!-- CHANGE THE TITLE OF THE TAB HERE -->
+  <link rel="shortcut icon" href="https://freeiconshop.com/wp-content/uploads/edd/bookmark-flat.png"> <!-- CHANGE THE FAVICON HERE -->
+  
+ <!---- ICON FONTS ----> 
+    <script src="https://kit.fontawesome.com/101a5d88e3.js"></script>
+    <link href="//solrainha.github.io/honeybee/honeybee.css" rel="stylesheet">
+  
+ <!---- GOOGLE FONTS ----> 
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    
+ <!---- TOOLTIPS SCRIPT ---->
+
+
+<style>
+
+  :root {
+
+/*                 === GENERAL CUSTOMIZATION STARTS HERE === 
+
+        NOTE: the colours all need to be in rgb for the page to work	*/
+
+    --background:250, 250, 250;
+	--background-image:url("");
+    --border-width:1px;
+	--border-radius:3px; 
+
+    --header-background:72, 212, 209;
+    --header-text:255, 255, 255;
+   	--header-links-hover-text:255, 255, 255;
+    --header-links-hover-background:0, 0, 0;
+    --header-font:'Bebas Neue';
+
+    --box-background:255, 255, 255;
+    --border-colour:0, 0, 0;
+   	--text-colour:0, 0, 0;
+   	--links-colour:83, 173, 181;
+   	--bold-colour:112, 112, 112;
+   	--italics-colour:156, 156, 156;
+	--title-font:'Assistant';
+    --text-font:'Roboto';
+    --text-size:13px;
+
+   	--links-border-colour:72, 212, 209;
+    --links-border-radius:3px;
+    --links-background:72, 212, 209;
+	--links-background-hover:255, 255, 255;
+    --links-text-colour:255,255,255;
+	--links-text-colour-hover:72, 212, 209;
+
+    --scrollbar:255, 255, 255;
+    --scrollbar-thumb:136, 242, 215;
+	--scrollbar-thumb-hover:255, 240, 36;
+
+	--selection-background:255, 221, 33;
+    --selection-text:0, 0, 0; 
+    
+    --tooltip-text-colour:0, 0, 0;
+    --tooltip-background-colour:255,255,255;
+    --tooltip-border-colour:3px; 
+    --tooltip-border-radius:3px; 
+    	
+  }
+
+/*		         === GENERAL CUSTOMIZATION ENDS === 
+      KNOWLEDGE OF CSS IS REQUIRED FOR FURTHER CUSTOMIZATION	*/
+      
+  iframe#tumblr_controls, .iframe-controls--desktop {
+    position:fixed;
+    top:0; right:0;
+    margin-top:39px;
+    margin-right:11px;
+    z-index:214748364789123456789;
+/* delete from here*/
+    filter:invert(100%) hue-rotate(180deg);
+    -webkit-filter:invert(100%) hue-rotate(180deg);
+    -moz-filter:invert(100%) hue-rotate(180deg);
+    -o-filter:invert(100%) hue-rotate(180deg);
+    -ms-filter:invert(100%) hue-rotate(180deg);
+ /* to here for light tumblr controls */
+    -webkit-transform:scale(0.6,0.6);
+    -webkit-transform-origin: 100% 0%;
+    -ms-transform-origin:100% 0%;
+    -ms-transform:scale(0.6,0.6);
+    transform:scale(0.6,0.6);
+    transform-origin:100% 0%; }
+
+  .iframe-controls--phone-mobile,
+  .tmblr-iframe--app-cta-button {
+    visibility:hidden!important;
+    display:none!important; }
+    
+/*   TOOLTIP   */
+  #s-m-t-tooltip {         
+    max-width:300px;
+    z-index:11;
+    color:rgb(var(--tooltip-text-colour));      
+    background-color:rgba(var(--tooltip-background-colour),0.9); 
+    font-size:12px; line-height:16px;            
+    position:absolute; text-align:center;
+    border:1px solid;
+    border-color:var(--tooltip-border-colour);
+    border-radius:var(--tooltip-border-radius);
+    padding:4px 11px 4px 11px;  }
+    
+  * { box-sizing: border-box; }
+  
+  body {
+    background:rgb(var(--background));
+	background-image:var(--background-image); 
+	color:rgb(var(--text-colour));
+    font-family:var(--text-font), sans-serif;
+	font-size:var(--text-size);
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	text-align:justify;
+	word-wrap:break-word; }
+
+  a { text-decoration:none; }
+  p { padding:0; 
+    margin:7px 0 0 0; }
+  .box b, strong { color:rgb(var(--bold-colour)); }
+  .box i, em { color:rgb(var(--italics-colour)); }
+  .box a { color:rgb(var(--links-colour)); }
+  
+  ::selection {
+    background:rgba(var(--selection-background),8);
+    color:rgb(var(--selection-text)); }
+  ::-moz-selection {
+    background:rgba(var(--selection-background),8);
+    color:rgb(var(--selection-text)); }
+  ::-webkit-selection {
+    background:rgba(var(--selection-background),8);
+    color:rgb(var(--selection-text)); }
+  
+  ::-webkit-scrollbar { width: 11px; height: 11px; }
+  ::-webkit-scrollbar-thumb { 
+    border:4px solid rgba(var(--scrollbar));
+    background:rgba(var(--scrollbar-thumb)); border-radius: 4px; }
+  ::-webkit-scrollbar-thumb:hover { 
+    background:rgba(var(--scrollbar-thumb-hover)); }
+  ::-webkit-scrollbar-track { background:rgba(var(--scrollbar)); }
+  
+  section {
+    box-sizing:border-box;
+    position:fixed;
+    width:calc(100% - 330px);
+    height:100%;
+    top:0; right:0;
+    overflow-y:scroll;
+    padding:120px 0; }
+  
+  #wrapper {
+    width:900px; height:100%;
+    margin:0 auto; }
+
+  #wrapper:after {
+    content:'';
+    display:block;
+    clear:both; }
+    
+/*   HEADER   */ 
+
+  header {
+    top:0; right:11px;
+    width:100%; height:40px; 
+    position:fixed;
+    background-color:rgba(var(--header-background),1); 
+    z-index:1; }
+  
+  header h1 {
+    width:auto;
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    float:left;
+    font-size:30px;    
+    font-weight:normal;
+    margin:0 60px 0 50px; 
+    font-family:var(--header-font), sans-serif;
+    letter-spacing:9px;
+    color:rgb(var(--header-text)); }
+  
+  #nav {
+    width:auto;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:var(--header-font), sans-serif;
+    float:right; }
+  
+  header a {
+    padding:0 11px; margin:0; 
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:40px;
+    color:rgb(var(--header-text));
+    font-size:19px;
+    letter-spacing:5px; }
+  
+  header a:hover {
+    background-color:rgb(var(--header-links-hover-background));
+    color:rgb(var(--header-links-hover-text)); }
+  
+  #mobile-nav { display:none; }
+  #open-filters { display:none; }
+  aside .close { display:none; }
+
+/*   FILTERS   */
+
+  aside {
+    position:fixed; overflow:hidden;
+    top:111px; left:100px;
+    width:230px; height:auto;
+    max-height:540px;
+    font-family:var(--title-font), sans-serif;
+    padding:0 0 10px 0;
+    background:var(--box-background);
+    border-width:var(--border-width);
+    border-style:solid;
+    border-color:rgb(var(--border-colour));
+    border-radius:var(--border-radius); }
+  
+  .filter-header {
+    margin:0; padding:10px;
+    font-size:calc(var(--text-size) + 4px);
+    text-transform:uppercase;
+    border-bottom:1px solid;
+    border-color:rgba(var(--text-colour),0.09); }
+  
+  .filter-header:after {
+    content:'\e9d9';
+    font-family:'honeybee';
+    font-size:15px;
+    float:right;
+    font-weight:normal;
+    margin-top:4px; }
+  
+  #filtering { height:auto;
+    max-height:calc(540px - ((var(--text-size) + 4px) + 35px)); }
+  
+  .drop, .no-drop {
+    list-style-type:none; 
+    padding:5px 20px 0 20px;
+    width:100%;
+    cursor:pointer;
+    transition:0.4s;
+    border:none;
+    font-size:calc(var(--text-size) + 2px); }
+  
+  .drop:after {
+    content:'\ebd8';
+    font-family:'honeybee';
+    float:right;
+    font-size:9px;
+    margin-top:5px; }
+
+  .active:after {
+    content:'\ec1e';
+    font-family:'honeybee';
+    float:right;
+    font-size:9px; }
+  
+  .dropdead {
+    padding:3px 30px;
+    max-height:0;
+    overflow:hidden;
+    transition:max-height 0.4s ease-out;
+    font-size:calc(var(--text-size) + 1px); }
+  
+  .no-drop a, .beaut a,
+  .dropdead a {
+    color:rgb(var(--text-colour));
+    display:block;
+    padding-top:5px; }
+  
+  .beaut a:after {
+    content:'\f0c8';
+    font-family:'Font Awesome 5 Free';
+    float:right;
+    font-size:12px;
+    margin:2px -1px 0 0; }
+  
+  .beaut a.selected:after {
+    content:'\f14a';
+    font-family:'Font Awesome 5 Free';
+    float:right;
+    font-size:12px; }
+  
+  .dropdead a:after {
+    content:'\f0c8';
+    font-family:'Font Awesome 5 Free';
+    float:right;
+    margin-right:10px;
+    font-size:12px; }
+  
+  .dropdead a.selected:after {
+    content:'\f14a';
+    font-family:'Font Awesome 5 Free';
+    float:right;
+    margin-right:10px;
+    font-size:12px; }
+
+/*   BOXES   */ 
+
+  .box {
+    box-sizing:border-box;
+    float:left;
+    margin-bottom:40px;
+    width:270px; height:auto;
+    background:var(--box-background);
+    border-width:var(--border-width);
+    border-style:solid;
+    border-color:rgb(var(--border-colour));
+    border-radius:var(--border-radius); }
+  
+  .box-title {
+    margin:0; padding:7px 10px;
+    border-bottom:1px solid;
+    border-color:rgba(var(--text-colour),0.09);
+    text-align:center;
+    font-family:var(--title-font), sans-serif; }
+  
+  .box-title h2 {
+    margin:0; padding:0;
+    font-size:calc(var(--text-size) + 4px);
+    text-transform:uppercase; }
+  
+  .box-title b {
+    margin:0; padding:0;
+    text-decoration:none;
+    font-size:calc(var(--text-size) + 0.5px);
+    font-weight:600;
+    color:rgba(var(--text-colour),0.8);
+    letter-spacing:1px; }
+  
+  .info {
+    padding:10px 15px; margin:0px;
+    border-bottom:1px solid;
+    border-color:rgba(var(--text-colour),0.09); }
+  
+  .summary {
+    margin:10px 0; padding:7px 11px; }
+
+  ol.info { margin:0; padding:0;}
+  
+  .info li {
+    list-style-type:none; 
+    margin:9px 0 0 0; padding:0;
+    text-align:justify; }
+  
+  .info li strong { font-weight:600;}
+  
+  .read-comment {
+    list-style-type:none; 
+    padding:0;
+    width:100%;
+    cursor:pointer;
+    transition:0.4s;
+    text-align:center; }
+
+  .links {
+    margin:0; padding:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:500;
+    text-transform:uppercase;
+    font-size:calc(var(--text-size) + 1px); }
+  
+  .links a {
+    margin-right:11px;
+    padding:3px 7px;
+    background-color:rgb(var(--links-background));
+    border:1px solid;
+    border-color:rgb(var(--links-border-colour));
+    border-radius:var(--links-border-radius);
+    color:rgb(var(--links-text-colour));
+    transition:0.4s ease; }
+  
+  .links a:hover {
+    background-color:rgb(var(--links-background-hover));
+    color:rgb(var(--links-text-colour-hover)); }
+  
+  .links a:last-of-type { margin-right:0; }
+
+/*   READER'S NOTES   */ 
+
+  #note1 {
+    top:100px; right:40px;
+    width:260px; height:auto;
+    max-height:300px;
+    position:fixed;
+    background:rgba(var(--box-background),0.95);
+    border-radius:var(--border-radius);
+    border-width:var(--border-width);
+    border-style:solid;
+    border-color:rgb(var(--border-colour));
+    z-index:10;
+    display:none; }
+  
+  .note-header {
+    cursor:pointer;
+    display:inline-block;
+    width:100%;
+    margin:0; padding:7px 25px 3px 7px;
+    font-family:var(--title-font), sans-serif;
+    font-size:calc(var(--text-size) + 3px);
+    text-transform:uppercase;
+    font-weight:600;
+    border-bottom:1px solid;
+    border-color:rgba(var(--text-colour),0.09); }
+  
+  .close-note {
+    cursor:pointer;
+    font-size:12px;
+    position:absolute;
+    margin:7px 0 0 237px; }
+  
+  .open-readernotes { cursor:pointer; }
+  .note-content { padding:10px 20px; }
+  .note-content ul { margin:0; padding:0; }
+  
+  .important li,
+  .note-content li { 
+    margin:5px 0 0 9px; padding:0; 
+    list-style-type:none;
+    text-align:justify; }
+  
+  .note-content li:before {
+    content: '\e928';
+    font-family:'honeybee';
+    font-size:9px;
+    margin:0 7px 0 -15px; }
+  
+  li.important:before {
+    content: '\ea12';
+    font-family:'honeybee';
+    font-size:9px;
+    margin:0 7px 0 -15px; }
+    
+  .important li:first-of-type,
+  .note-content li:first-of-type {
+    margin:0 0 0 9px; }
+  
+/*    CREDITS. DON'T ALTER    */ 
+
+  footer {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin:50px 0 0 0; }
+  
+  @font-face { font-family:'Another Barcode'; 
+    src: url('https://cdn.glitch.com/fe331e27-83f9-4bbf-8c74-c3a912a79786%2FAnother%20barcode%20font.ttf?v=1611442337800') format('truetype'); 
+    font-weight:normal; font-style:normal; } 
+  
+  footer a {
+    background-color:#000;
+    font-size:30px; color:#fff;
+    text-decoration:none;
+    font-family:'Another Barcode';
+    letter-spacing:2px;
+    border:1px solid #fff;
+    border-radius:3px;
+    padding:7px 7px 7px 9px; }
+  
+ footer a:hover { 
+    color:#000; 
+    background-color:#fff; 
+    border:1px solid #000; }
+  
+/*    DEVISE RESPONSIVENESS    */ 
+
+  @media only screen and  (max-width:1400px) {
+      
+    section { width:calc(100% - 310px); }
+    aside { left:70px; max-height:440px; }
+    #filtering { 
+        max-height:calc(440px - ((var(--text-size) + 4px) + 35px)); }
+  } 
+  
+  @media only screen and  (max-width:1100px) {
+      
+    ::-webkit-scrollbar { width: 1px; height: 1px; }
+    header { right:0; }
+    aside { left:45px; width:230px; max-height:900px; }
+    section { width:calc(100% - 320px); }
+    #wrapper { width:100%; }
+    .box { width:90%; height:auto; }
+  } 
+  
+  @media only screen and  (max-width:700px) {
+    
+    ::-webkit-scrollbar { width: 1px; height: 1px; }
+    header { right:0; }
+    header h1 { margin:0 25px; }
+    #nav { display:none; }  
+    #open-filters { cursor:pointer;
+        border:none; position:fixed;
+        font-size:25px; display:flex;
+        justify-content:center;
+        align-items:center;
+        height:40px; width:40px;
+        top:0; right:0; z-index:3;
+        color:rgb(var(--header-text));
+        background-color:rgba(var(--header-background),1); } 
+    #mobile-nav { box-sizing:border-box;
+        margin:30px auto 40px auto; 
+        display:block;
+        width:100%; height:auto;
+        background:rgba(255,255,255,0);
+        border-color:rgba(255,255,255,0);
+        text-transform:uppercase;
+        font-size:calc(var(--text-size) + 1px); }
+    #mobile-nav a { margin-right:17px;
+        padding:0px 5px 0px 11px;
+        background-color:rgb(var(--links-background));
+        border:1px solid;
+        border-color:rgb(var(--links-border-colour));
+        border-radius:var(--links-border-radius);
+        color:rgb(var(--links-text-colour));
+        transition:0.4s ease;
+        font-family:var(--header-font), sans-serif;
+        font-size:19px; letter-spacing:5px; }
+    #mobile-nav a:hover {
+        background-color:rgb(var(--links-background-hover));
+        color:rgb(var(--links-text-colour-hover)); }
+    .row { width:100%; display:flex;
+        align-items:center;
+        justify-content:center;
+        margin-bottom:11px; }
+    .row:last-of-type { margin-bottom:0; }
+    #mobile-nav a:last-of-type { margin-right:0; }
+    aside { height:100%; width:0;
+        position:fixed; overflow:hidden;
+        overflow-x:hidden;
+        top:0; left:0;
+        padding:0 0 10px 0;
+        border:none;
+        background-color:#fff;
+        border-right:1px solid #000;
+        border-radius:0 3px 3px 0;
+        transition: 0.5s; z-index:21; }
+    aside .close { display:block;
+        position:absolute; top:7px; 
+        right:7px; font-size:15px; }
+    a.close {color:rgb(var(--text-colour)); }
+    .filter-header:after { content:''; }
+    #filtering { height:auto; overflow:auto;
+        max-height:calc(100% - ((13px + 4px) + 35px)); }
+    section { width:100%; padding:50px 0; }
+    #mb { transition: margin-left .5s; }
+    #wrapper { width:90%; padding-top:121px;}
+    .box { width:100%; height:auto; }
+  } 
+  
+</style> </head>
+
+<body>
+
+
+
+
+
+<header>
+
+<!--                ======= START DESKTOP NAVIGATION  =======               -->
+
+  <div id="nav"> 
+    <a href="/">home</a>
+    <a href="/ask">ask</a>
+    <a href="/submit">submit</a>
+    <a href="/archive">archive</a>       
+  </div>
+  
+<!--                 ======= END DESKTOP NAVIGATION  =======                -->
+
+  <h1>FIC RECS</h1> <!-- PAGE TITLE -->
+    
+  <button id="open-filters" onclick="openFltrs()">
+    <span class="th th-controls-3-o"></span> <!-- MOBILE FILTERS ICON -->
+  </button>
+  
+</header>
+
+
+
+<aside id="fltrs">
+  <a href="javascript:void(0)" class="close" onclick="closeFltrs()">
+    <span class="th th-cross-1-o"></span></a>
+    
+    
+  <h2 class="filter-header"> Filters </h2> <!-- FILTERS TITLE -->
+
+
+<div id="filtering">
+  <li class="no-drop">
+    <a  href="#" data-filter-value="*" class="reset selected">Show All</a></li>
+  <li class="no-drop beaut option-set" >
+    <a href="#" data-filter-value=".fave">Favourites</a></li>
+    
+<!--                ======= START FILTERS =======                          -->
+
+  <li class="drop">Status</li>
+  <div class="dropdead option-set" data-filter-group="status">
+    <a href="#" data-filter-value=".wip">Ongoing</a>
+    <a href="#" data-filter-value=".comp">Complete</a>
+  </div>
+  
+  <li class="drop">Pairings</li>
+  <div class="dropdead option-set" data-filter-group="pairings">
+    <a href="#" data-filter-value=".pairing1">Pairings One</a>
+    <a href="#" data-filter-value=".pairing2">Pairings Two</a>
+    <a href="#" data-filter-value=".pairing3">Pairings Three</a>
+  </div>
+
+  <li class="drop">Ratings</li>
+  <div class="dropdead option-set" data-filter-group="ratings">
+    <a href="#" data-filter-value=".gen">General</a>
+    <a href="#" data-filter-value=".teen">Teen</a>
+    <a href="#" data-filter-value=".mat">Mature</a>
+    <a href="#" data-filter-value=".exp">Explicit</a>
+    <a href="#" data-filter-value=".nr">Not Rated</a>
+  </div>
+
+  <li class="drop">Lenght</li>
+  <div class="dropdead option-set" data-filter-group="lenght">
+    <a href="#" data-filter-value=".os">Oneshot</a>
+    <a href="#" data-filter-value=".chap">Chaptered</a>
+  </div>
+  
+<!--                  ======= END FILTERS =======                            -->
+
+</div> </aside>
+
+
+
+
+
+<section id="mb">
+
+<!--                 ======= START MOBILE NAVIGATION =======               -->
+
+  <div id="mobile-nav" class="box">
+    <div class="row">
+      <a href="/">home</a>
+      <a href="/ask">ask</a>
+      <a href="/submit">submit</a> <br>
+    </div>
+    <div class="row">
+      <a href="/archive">archive</a>
+    </div>
+  </div>
+  
+<!--                  ======= END MOBILE NAVIGATION =======               --> 
+  
+  
+<div id="wrapper">
+
+
+<!--                ======= MAIN PAGE CONTENT STARTS =======                    
+
+if your rec's summary has more than one paragraph, don’t forget to wrap it in between <p> tags. like like this:
+
+    <strong>Summary:  </strong>Your rec summary.
+    <p>Second paragraph here.</p>          
+    
+you need to use other html tags in order to format the text too.           -->
+
+
+<!---  REC TEMPLATE: BASIC  --->
+  <div class="box"> <!-- add your filters here. be sure to NOT delete "box" -->
+
+  <div class="box-title">
+    <h2>Rec Title</h2> 
+    <b>by author</b> 
+  </div>
+
+  <div class="info">
+    <strong>Summary:  </strong>Your rec summary.
+    <li><strong>Word count: </strong>Word count.</li>
+    <li><strong>Warnings: </strong>Rec warnings.</li>
+  </div>
+
+  <div class="links">
+    <a href="URL">link 1</a>
+    <a href="URL">link 2</a>
+  </div>
+
+</div>
+<!---  END BASIC TEMPLATE  --->
+
+
+<!---  REC TEMPLATE: FAVOURITE   --->
+  <div class="box fave"> 
+  <div class="box-title">
+    <h2>Rec Title</h2>
+    <b>by author</b>
+  </div>
+
+  <div class="info">
+    <strong>Summary:  </strong>Your rec summary.
+    <li><strong>Word count: </strong>Word count.</li>
+    <li><strong>Warnings: </strong>Rec warnings.</li>
+  </div>
+
+  <div class="links">
+    <a href="URL">link 1</a>
+  </div>
+
+</div>
+<!---  END FAVOURITE TEMPLATE  --->
+
+
+<!---  REC TEMPLATE: READER'S NOTES  --->
+  <div class="box"> 
+
+  <div class="box-title">
+    <h2>Rec Title</h2> 
+    <b>by author</b> 
+  </div>
+
+  <div class="info">
+    <strong>Summary:  </strong>Your rec summary.
+    <li><strong>Word count: </strong>Word count.</li>
+    <li><strong>Warnings: </strong>Rec warnings.</li>
+  </div>
+
+  <div class="links">
+    <a class="open-readernotes">see notes</a>
+    <a href="URL">link 1</a>
+  </div>
+
+</div>
+<!---  END READER'S NOTES TEMPLATE  --->    
+
+
+<!--               ======= MAIN PAGE CONTENT END =======                    -->
+
+
+
+
+<!--              ======= CREDITS: DO NOT ALTER. =======                    -->
+</div> <footer> <a href="https://gatoscodes.tumblr.com" title="MERCURIAL BY GATOSCODES">gatoscodes</a> </footer> </section>
+
+
+
+
+<!--                ======= READER'S NOTES START =======
+
+this page theme has a feature that allows you to include your personal notes on
+the recs in a small pop-up.  this feature requires some minor additional coding
+(mostly copy-pasting) in order to be added.  if you are interested, go read the
+"Adding Reader's Notes" section on the page's guide for the tutorial.       -->
+
+    <!-- NOTE ONE START --> <div id="note1">
+	<div class="close-note"><span class="th th-cross-1-o"></span></div>
+
+	<div class="note-header">your rec title: notes</div>
+
+	<div class="note-content">
+		<li class="important">This part is to include any warning, whether on the rec itself or on the contents of your personal notes.</li>
+		<p>You can write your notes in paragraph format. Semper viverra nam libero justo laoreet sit amet cursus sit. Ullamcorper sit amet risus nullam eget felis. Mattis rhoncus urna neque viverra justo nec ultrices. Viverra justo nec ultrices dui sapien eget mi.</p>
+		<li>Or write them in bullets</li>
+		<li>Dolor sit amet consectetur</li>
+	</div>
+	</div> <!-- NOTE ONE END -->
+
+<!--                 ======= READER'S NOTES END =======                     -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--                      ======= SCRIPTS =======
+              DON'T TOUCH UNLESS YOU KNOW WHAT YOU ARE DOING                -->
+<script>
+  function openFltrs() {
+    document.getElementById("fltrs").style.width = "230px";
+    document.getElementById("mb").style.marginLeft = "230px"; }
+
+  function closeFltrs() {
+    document.getElementById("fltrs").style.width = "0";
+    document.getElementById("mb").style.marginLeft= "0"; }
+</script>
+  
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  
+<script>
+  $("#note1").draggable({
+    handle: ".note-header" });
+
+  $(".close-note").click(function(){
+    $("#note1").hide(); });
+
+  $(window).load(function () {
+    $(".open-readernotes").click(function(){
+      $('#note1').show(); }); });
+</script>
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script> 
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+<script src="https://static.tumblr.com/p0knose/FpAp5c11c/magnusthemes.combofilters.js"></script>   
+  
+<script>
+  var acc = document.getElementsByClassName('drop');
+  var i;
+
+  for (i = 0; i < acc.length; i++) {
+    acc[i].addEventListener('click', function() {
+      this.classList.toggle('active');
+      var filters = this.nextElementSibling;
+      if (filters.style.maxHeight) {
+        filters.style.maxHeight = null; } 
+      else {
+        filters.style.maxHeight = filters.scrollHeight + 'px'; } }); }
+</script>
+  
+<script>  
+    $(document).ready(function() {
+      var $container = $("#wrapper"); 
+      var filters = {}; 
+      var $grid = $container.isotope({
+        itemSelector: ".box", 
+        masonry: {
+          columnWidth:270,
+          gutter:30,
+          horizontalOrder:true
+        }
+      });
+      
+      $('.reset').on( 'click', function() {
+        filters = {};
+        $container.isotope({ filter: '*' });
+        $('.option-set a').removeClass('selected');
+        $('.reset').addClass('selected');
+      });
+      
+      $(".option-set a").click(function(e) {
+        var $this = $(this); 
+        var filterAttr = "data-filter-value";
+        var filterValue = $this.attr(filterAttr); 
+        var $optionSet = $this.parents(".option-set");
+        var group = $optionSet.attr("data-filter-group");
+        var filterGroup = filters[group];
+        if (!filterGroup) {
+          filterGroup = filters[group] = [];
+          }
+          var $selectAll = $optionSet.find('a['+filterAttr+'=""]'); 
+          var activeClass = "selected", 
+              exclClass = "exclusive"; 
+      comboFiltering($this,filters,filterAttr,filterValue,$optionSet,group,$selectAll,activeClass,exclClass);
+        var comboFilter = getComboFilter(filters);
+        $grid.isotope({
+          filter: comboFilter
+        });
+        $this.toggleClass(activeClass);
+        e.preventDefault();
+      });
+    });
+</script>
+  
+<link href="https://static.tumblr.com/obhfn4x/uggqk5yfl/style-my-tooltips.css" rel="stylesheet" type="text/css" />
+<script src="https://static.tumblr.com/obhfn4x/ITBqk5yf4/jquery.style-my-tooltips.js"></script>
+<script>
+  (function($){
+    $(document).ready(function(){
+      $("[title]").style_my_tooltips(); });
+    })(jQuery);
+</script> 
+    
+</body> </html> 
