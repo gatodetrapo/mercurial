@@ -16,6 +16,7 @@
 - [Isotope Combination Filtering Tutorial](https://magnusthemes.tumblr.com/post/171696773190/isotope-combination-filtering) by [Magnusthemes](https://magnusthemes.tumblr.com/)
 - [Preview Favicon](https://freeiconshop.com/icon/bookmark-ribbon-icon-flat/)
 - [Another Barcode Font](https://www.dafont.com/es/another-barcode-font.font)
+
 [[Page Guide]](https://gatosdoxs.tumblr.com/mercurial-guide)
 
 ## [[view post in tumblr]](https://gatoscodes.tumblr.com/post/642013833913827328/mercurial)
